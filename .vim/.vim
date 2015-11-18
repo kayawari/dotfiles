@@ -1,0 +1,1 @@
+/Users/KANSEIINFO/dotfiles/.vim
