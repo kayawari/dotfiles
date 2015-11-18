@@ -17,4 +17,4 @@ $ ./dotfilesLink.sh
 
 ###_参考サイト_
 * http://nwpct1.hatenablog.com/entry/2014/01/14/214128
-* 
+* [PHPファイルにHTMLを記述したとき、Vimのオートインデントがおかしくなる問題 - Qiita](http://qiita.com/hashiohiro/items/71a47061e91b61bbb189)
