@@ -1,7 +1,5 @@
 export PAGER=/usr/local/bin/vimpager
 alias less=$PAGER
-alias zless=$PAGER
-
+alias zless=$PAGERi
 export PATH=$HOME/.composer/vendor/bin:$PATH
-
-alias cot='open -a "CotEditor"'
+export PATH="/usr/local/sbin:$PATH"
