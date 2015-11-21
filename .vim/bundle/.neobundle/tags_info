@@ -1,6 +1,8 @@
 emmet-vim
 html5.vim
 neobundle.vim
+neocomplete-php.vim
+neocomplete.vim
 neomru.vim
 nerdtree
 open-browser.vim
