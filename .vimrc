@@ -1,4 +1,4 @@
-colorscheme molokai
+colorscheme jellybeans
 syntax on
 set nocompatible " set from vi to vim ???? 
 set t_Co=256 " screen's color setted 256 color mode. 
@@ -15,10 +15,9 @@ set ruler " show ruler on status bar.
 set title " show file's title.
 set number
 set showcmd
-set laststatus=3 " Status bar's height.
-set cmdheight=2 " message bar in status bar????
+set laststatus=2 " Status bar's height.
+set cmdheight=1 " message bar in status bar????
 set confirm " If you forget to save current file, confirm to save.
-
 set autoread
 set helpheight=999 " If call vim's help, show help page in full screen.
 set history=5000
@@ -43,6 +42,10 @@ set ignorecase
 set incsearch " Use incremantal searching mode.
 set wrapscan
 
+
+"==============================
+" NeoBundle
+"==============================
 filetype off
 if 0 | endif
 
@@ -58,7 +61,31 @@ call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'itchyny/lightline.vim'
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&filetype=="help"?"":&readonly?"x":""}',
+      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}'
+      \ },
+      \ 'component_visible_condition': {
+      \   'readonly': '(&filetype!="help"&& &readonly)',
+      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))'
+      \ },
+      \ 'separator': { 
+      \    'left': '|', 'right': '|' 
+      \ },
+      \ 'subseparator': {
+      \    'left': '|', 'right': '|' 
+      \ }
+\ }
+
 
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
+
+
+"==============================
+" keybind
+"==============================
