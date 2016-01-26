@@ -87,6 +87,32 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 
 
+"==============================
+" For javascript
+"==============================
+NeoBundle 'pangloss/vim-javascript'
+let g:javascript_conceal_function   = "ƒ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "⇚"
+let g:javascript_conceal_undefined  = "¿"
+let g:javascript_conceal_NaN        = "ℕ"
+let g:javascript_conceal_prototype  = "¶"
+let g:javascript_conceal_static     = "•"
+let g:javascript_conceal_super      = "Ω"
+
+NeoBundle 'Shutnik/jshint2.vim'
+let jshint2_read = 1
+let jshint2_save = 1
+let jshint2_close = 0
+let jshint2_confirm = 0
+let jshint2_color = 0
+let jshint2_error = 0
+let jshint2_min_height = 3
+let jshint2_max_height = 12
+
+
+
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
