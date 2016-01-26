@@ -60,8 +60,14 @@ endif
 call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
-
 NeoBundle 'Shougo/unite.vim'
+let g:unite_enable_start_insert=1
+noremap <C-B> :Unite buffer<CR>
+noremap <C-F> :Unite -buffer-name=file file<CR>
+au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
+au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
+
+NeoBundle 'scrooloose/nerdtree'
 
 NeoBundle 'itchyny/lightline.vim'
 let g:lightline = {
@@ -85,8 +91,6 @@ let g:lightline = {
 NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
-
-NeoBundle 'scrooloose/syntastic'
 
 "==============================
 " For javascript
@@ -112,15 +116,6 @@ let jshint2_error = 0
 let jshint2_min_height = 3
 let jshint2_max_height = 12
 
-"============================
-" For Php
-"============================
-
-
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
-
-"==============================
-" keybind
-"==============================
