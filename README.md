@@ -30,4 +30,4 @@ $ ./dotfilesLink.sh
 * Shougo/neosnippet-snippets：上記のneosnippetのデフォルトのスニペット
 * vim-javascript：jsのシンタックスとインデント調整
 * jshint2.vim：jsのシンタックスエラーなどをしてくれる
-* 
+* neocomplete-php.vim：phpのデフォルト関数の補完 

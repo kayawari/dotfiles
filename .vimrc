@@ -111,6 +111,11 @@ let jshint2_error = 0
 let jshint2_min_height = 3
 let jshint2_max_height = 12
 
+"============================
+" For Php
+"============================
+NeoBundle 'violetyk/neocomplete-php.vim'
+let g:neocomplete_php_locale = 'ja'
 
 
 call neobundle#end()
