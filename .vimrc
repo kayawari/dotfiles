@@ -86,6 +86,7 @@ NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 
+NeoBundle 'scrooloose/syntastic'
 
 "==============================
 " For javascript

@@ -31,7 +31,7 @@ $ ./dotfilesLink.sh
 * Shougo/neosnippet-snippets：上記のneosnippetのデフォルトのスニペット
 * vim-javascript：jsのシンタックスとインデント調整
 * jshint2.vim：jsのシンタックスエラーなどをしてくれる
-*
+* scrooloose/syntastic：各言語のlintを実行してくれる。
 
 
 
