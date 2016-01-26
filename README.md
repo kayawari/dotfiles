@@ -20,6 +20,7 @@ $ ./dotfilesLink.sh
 * [PHPファイルにHTMLを記述したとき、Vimのオートインデントがおかしくなる問題 - Qiita](http://qiita.com/hashiohiro/items/71a47061e91b61bbb189)
 * [set pasteについて](http://qiita.com/quwa/items/019250dbca167985fe32)
 * [lightline](https://github.com/itchyny/lightline.vim)
+* [neocomplete設定デフォルト](https://github.com/Shougo/neocomplete.vim)
 
 ###プラグイン
 * neobundle ：プラグイン管理
@@ -31,6 +32,6 @@ $ ./dotfilesLink.sh
 * Shougo/neosnippet-snippets：上記のneosnippetのデフォルトのスニペット
 * vim-javascript：jsのシンタックスとインデント調整
 * jshint2.vim：jsのシンタックスエラーなどをしてくれる
-
+* syntactis：各言語のシンタックスエラー確認[scrooloose/syntastic](https://github.com/scrooloose/syntastic#settings)
 
 
