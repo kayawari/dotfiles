@@ -42,6 +42,8 @@ set ignorecase
 set incsearch " Use incremantal searching mode.
 set wrapscan
 
+noremap <S-h> <Esc>^
+noremap <S-b> <Esc>$
 
 " ==============================
 " NeoBundle
