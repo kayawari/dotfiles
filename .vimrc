@@ -68,6 +68,7 @@ au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
 au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
 NeoBundle 'scrooloose/nerdtree'
+noremap <C-T> :NERDTree<CR>
 
 NeoBundle 'itchyny/lightline.vim'
 let g:lightline = {

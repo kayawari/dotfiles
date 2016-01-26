@@ -20,18 +20,17 @@ $ ./dotfilesLink.sh
 * [PHPファイルにHTMLを記述したとき、Vimのオートインデントがおかしくなる問題 - Qiita](http://qiita.com/hashiohiro/items/71a47061e91b61bbb189)
 * [set pasteについて](http://qiita.com/quwa/items/019250dbca167985fe32)
 * [lightline](https://github.com/itchyny/lightline.vim)
-* [neocompleteの設定例](http://pocke.hatenablog.com/entry/2015/10/01/222216)
 
 ###プラグイン
 * neobundle ：プラグイン管理
-* unite.vim：vimからファイル開いたりできる。
+* unite.vim：vimからファイル開いたりできる。[Unite.vimまとめ](http://qiita.com/hide/items/77b9c1b0f29577d60397)
+* nerdtree：ディレクトリをツリー表示
 * lightline.vim：下のバーの色を変えたりなど、カスタマイズが可能
 * Shougo/neocomplete：入力補完
 * Shougo/neosnippet：スニペット管理
 * Shougo/neosnippet-snippets：上記のneosnippetのデフォルトのスニペット
 * vim-javascript：jsのシンタックスとインデント調整
 * jshint2.vim：jsのシンタックスエラーなどをしてくれる
-* scrooloose/syntastic：各言語のlintを実行してくれる。
 
 
 
