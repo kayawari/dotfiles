@@ -1,3 +1,4 @@
+colorscheme molokai
 syntax on
 
 set t_Co=256 " screen's color setted 256 color mode. 
