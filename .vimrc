@@ -1,4 +1,3 @@
-colorscheme jellybeans
 syntax on
 
 set t_Co=256 " screen's color setted 256 color mode. 
@@ -10,7 +9,6 @@ set nobackup " do not create swp file.
 set shell=zsh
 
 set cursorline 
-set cursorcolumn
 set scrolloff=7
 set ruler " show ruler on status bar.
 set title " show file's title.
@@ -26,12 +24,12 @@ set whichwrap+=h,l,<,>,[,],b,s
 
 " Tab and space setting.
 set expandtab " Tabs convert to space key.
-set tabstop=4 " Tabs's width.
-set shiftwidth=4 " Automatic inserting tab's width.
+set tabstop=2 " Tabs's width.
+set shiftwidth=2 " Automatic inserting tab's width.
 set smarttab    " If you type tab key in black line, type shiftwidth tab.
 set smartindent
 set autoindent
-set softtabstop=4
+set softtabstop=2
 set showmatch " highlight matching branckets.
 set wrap " Turn down line.
 
@@ -45,24 +43,20 @@ set wrapscan
 noremap <S-h> <Esc>^
 noremap <S-b> <Esc>$
 
-
-" ==============================
-" NeoBundle
-" ==============================
-filetype off
+"====================
+"NeoBundle
+"====================
 if 0 | endif
-
- if has('vim_starting')
-   if &compatible
-     " set nocompatible               " Be iMproved
-   endif
-
-   " Required:
-   set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible
 endif
+
+set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+
 NeoBundle 'Shougo/unite.vim'
 let g:unite_enable_start_insert=1
 noremap <C-B> :Unite buffer<CR>
@@ -96,9 +90,12 @@ let g:lightline = {
 
 
 NeoBundle 'Shougo/neocomplete'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
 
+
+NeoBundle 'Shougo/neosnippet'
+
+
+NeoBundle 'Shougo/neosnippet-snippets'
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
@@ -109,24 +106,20 @@ let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
 \ 'default' : '',
 \ 'vimshell' : $HOME.'/.vimshell_hist',
 \ 'scheme' : $HOME.'/.gosh_completions'
 \ }
-
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
 let g:neocomplete#keyword_patterns = {}
 endif
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
 " Plugin key-mappings.
 inoremap <expr><C-g>     neocomplete#undo_completion()
 inoremap <expr><C-l>     neocomplete#complete_common_string()
-
 " Recommended key-mappings.
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
@@ -142,23 +135,19 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " Close popup by <Space>.
 "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
-
 " AutoComplPop like behavior.
 "let g:neocomplete#enable_auto_select = 1
-
 " Shell like behavior(not recommended).
 "set completeopt+=longest
 "let g:neocomplete#enable_auto_select = 1
 "let g:neocomplete#disable_auto_complete = 1
 "inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
-
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
 let g:neocomplete#sources#omni#input_patterns = {}
@@ -172,18 +161,14 @@ endif
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 
-
 NeoBundle 'scrooloose/syntastic'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-
 
 
 "==============================
@@ -200,6 +185,7 @@ let g:javascript_conceal_prototype  = "¶"
 let g:javascript_conceal_static     = "•"
 let g:javascript_conceal_super      = "Ω"
 
+
 NeoBundle 'Shutnik/jshint2.vim'
 let jshint2_read = 1
 let jshint2_save = 1
@@ -209,7 +195,6 @@ let jshint2_color = 0
 let jshint2_error = 0
 let jshint2_min_height = 3
 let jshint2_max_height = 12
-
 
 
 call neobundle#end()
