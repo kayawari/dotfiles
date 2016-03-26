@@ -29,8 +29,8 @@ $ ./dotfilesLink.sh
 * Shougo/neocomplete：入力補完（未設定）
 * Shougo/neosnippet：スニペット管理（未設定）
 * Shougo/neosnippet-snippets：上記のneosnippetのデフォルトのスニペット（未設定）
-* vim-javascript：jsのシンタックスとインデント調整
-* jshint2.vim：jsのシンタックスエラーなどをしてくれる
+* ~~vim-javascript：jsのシンタックスとインデント調整~~
+* ~~jshint2.vim：jsのシンタックスエラーなどをしてくれる~~
 * syntactis：各言語のシンタックスエラー確認(デフォルト設定)[scrooloose/syntastic](https://github.com/scrooloose/syntastic#settings)
 
 
