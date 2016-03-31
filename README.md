@@ -23,14 +23,5 @@ $ ./dotfilesLink.sh
 
 ###プラグイン
 * neobundle ：プラグイン管理
-* unite.vim：vimからファイル開いたりできる。[Unite.vimまとめ](http://qiita.com/hide/items/77b9c1b0f29577d60397)
-* nerdtree：ディレクトリをツリー表示
-* lightline.vim：下のバーの色を変えたりなど、カスタマイズが可能
-* Shougo/neocomplete：入力補完（未設定）
-* Shougo/neosnippet：スニペット管理（未設定）
-* Shougo/neosnippet-snippets：上記のneosnippetのデフォルトのスニペット（未設定）
-* ~~vim-javascript：jsのシンタックスとインデント調整~~
-* ~~jshint2.vim：jsのシンタックスエラーなどをしてくれる~~
-* syntactis：各言語のシンタックスエラー確認(デフォルト設定)[scrooloose/syntastic](https://github.com/scrooloose/syntastic#settings)
 
 

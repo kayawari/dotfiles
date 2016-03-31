@@ -14,30 +14,8 @@ call neobundle#begin(expand('/Users/kayamelo/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplete'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'itchyny/lightline.vim'
-let g:lightline = {
-  \ 'colorscheme': 'wombat',
-  \ 'component': {
-  \   'readonly': '%{&filetype=="help"?"":&readonly?"x":""}',
-  \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}'
-  \ },
-  \ 'component_visible_condition': {
-  \   'readonly': '(&filetype!="help"&& &readonly)',
-  \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))'
-  \ },
-  \ 'separator': { 
-  \    'left': '|', 'right': '|' 
-  \ },
-  \ 'subseparator': {
-  \    'left': '|', 'right': '|' 
-  \ }
-\ }
+
+
 " Required:
 call neobundle#end()
 
