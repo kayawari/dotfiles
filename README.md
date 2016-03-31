@@ -19,10 +19,12 @@ $ ./dotfilesLink.sh
 * [PHPファイルにHTMLを記述したとき、Vimのオートインデントがおかしくなる問題 - Qiita](http://qiita.com/hashiohiro/items/71a47061e91b61bbb189)
 * [set pasteについて](http://qiita.com/quwa/items/019250dbca167985fe32)
 * [lightline](https://github.com/itchyny/lightline.vim)
-* [neocomplete設定デフォルト](https://github.com/Shougo/neocomplete.vim)
+* [tyru/caw.vim](https://github.com/tyru/caw.vim)
+* [Shougo/Unite.vim](https://github.com/Shougo/unite.vim)
 
 ###プラグイン
 * neobundle ：プラグイン管理
+<<<<<<< HEAD
 * unite.vim：vimからファイル開いたりできる。[Unite.vimまとめ](http://qiita.com/hide/items/77b9c1b0f29577d60397)
 * nerdtree：ディレクトリをツリー表示
 * lightline.vim：下のバーの色を変えたりなど、カスタマイズが可能
@@ -32,4 +34,9 @@ $ ./dotfilesLink.sh
 * ~~jshint2.vim：jsのシンタックスエラーなどをしてくれる~~
 * syntactis：各言語のシンタックスエラー確認(デフォルト設定)[scrooloose/syntastic](https://github.com/scrooloose/syntastic#settings)
 
+=======
+* unite.vim :ファイル一覧など表示
+* lightline :ステータスバーをちょっとかっこよく
+* caw.vim :コメントアウトを便利に
+>>>>>>> vimrc_comment
 

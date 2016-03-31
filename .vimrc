@@ -1,31 +1,21 @@
-colorscheme molokai
-syntax on
-
-"====================
-"NeoBundle
-"====================
-if 0 | endif
+"NeoBundle Scripts-----------------------------
 if &compatible
-  set nocompatible
+set nocompatible               " Be iMproved
 endif
-set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
+
+" Required:
+set runtimepath^=/Users/kayamelo/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/Users/kayamelo/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
-
-
 NeoBundle 'Shougo/unite.vim'
-let g:unite_enable_start_insert=1
-noremap <C-B> :Unite buffer<CR>
-noremap <C-F> :Unite -buffer-name=file file<CR>
-au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
-au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
-
-
-NeoBundle 'scrooloose/nerdtree'
-noremap <C-T> :NERDTree<CR>
-
-
+" Add or remove your Bundles here:
 NeoBundle 'itchyny/lightline.vim'
+<<<<<<< HEAD
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'component': {
@@ -60,12 +50,28 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+=======
+NeoBundle "tyru/caw.vim.git"
+nmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
+vmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
+nmap <Leader><C-e> <Plug>(caw:a:toggle)
+vmap <Leader><C-e> <Plug>(caw:a:toggle)
+>>>>>>> vimrc_comment
 
+" Required:
 call neobundle#end()
+
+" Required:
 filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
 NeoBundleCheck
+"End NeoBundle Scripts-------------------------
 
 
+colorscheme molokai
+syntax on
 set t_Co=256 " screen's color setted 256 color mode. 
 set backspace=indent,eol,start " use backspace key.
 set clipboard=unnamed,autoselect " use OS's clipoard.
@@ -102,5 +108,6 @@ set ignorecase
 set incsearch " Use incremantal searching mode.
 set wrapscan
 
-noremap <S-h> <Esc>^
-noremap <S-b> <Esc>$
+" Cursor moves to top or bottom of line.
+noremap <S-a> <Esc>^
+noremap <S-z> <Esc>$
