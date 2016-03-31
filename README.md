@@ -19,9 +19,12 @@ $ ./dotfilesLink.sh
 * [PHPファイルにHTMLを記述したとき、Vimのオートインデントがおかしくなる問題 - Qiita](http://qiita.com/hashiohiro/items/71a47061e91b61bbb189)
 * [set pasteについて](http://qiita.com/quwa/items/019250dbca167985fe32)
 * [lightline](https://github.com/itchyny/lightline.vim)
-* [neocomplete設定デフォルト](https://github.com/Shougo/neocomplete.vim)
+* [tyru/caw.vim](https://github.com/tyru/caw.vim)
+* [Shougo/Unite.vim](https://github.com/Shougo/unite.vim)
 
 ###プラグイン
 * neobundle ：プラグイン管理
-
+* unite.vim :ファイル一覧など表示
+* lightline :ステータスバーをちょっとかっこよく
+* caw.vim :コメントアウトを便利に
 

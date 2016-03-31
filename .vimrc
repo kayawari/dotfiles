@@ -12,9 +12,14 @@ call neobundle#begin(expand('/Users/kayamelo/.vim/bundle'))
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
-
+NeoBundle 'Shougo/unite.vim'
 " Add or remove your Bundles here:
-
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle "tyru/caw.vim.git"
+nmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
+vmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
+nmap <Leader><C-e> <Plug>(caw:a:toggle)
+vmap <Leader><C-e> <Plug>(caw:a:toggle)
 
 " Required:
 call neobundle#end()
@@ -70,5 +75,6 @@ set ignorecase
 set incsearch " Use incremantal searching mode.
 set wrapscan
 
-noremap <S-h> <Esc>^
-noremap <S-b> <Esc>$
+" Cursor moves to top or bottom of line.
+noremap <S-a> <Esc>^
+noremap <S-z> <Esc>$
