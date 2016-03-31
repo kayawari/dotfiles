@@ -1,7 +1,4 @@
 caw.vim
 lightline.vim
 neobundle.vim
-neocomplete
-neosnippet
-syntastic
 unite.vim

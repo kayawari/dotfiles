@@ -15,48 +15,11 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 " Add or remove your Bundles here:
 NeoBundle 'itchyny/lightline.vim'
-<<<<<<< HEAD
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'component': {
-      \   'readonly': '%{&filetype=="help"?"":&readonly?"x":""}',
-      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}'
-      \ },
-      \ 'component_visible_condition': {
-      \   'readonly': '(&filetype!="help"&& &readonly)',
-      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))'
-      \ },
-      \ 'separator': { 
-      \    'left': '|', 'right': '|' 
-      \ },
-      \ 'subseparator': {
-      \    'left': '|', 'right': '|' 
-      \ }
-\ }
-
-
-NeoBundle 'Shougo/neocomplete'
-
-
-NeoBundle 'Shougo/neosnippet'
-
-
-NeoBundle 'scrooloose/syntastic'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-=======
 NeoBundle "tyru/caw.vim.git"
 nmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
 vmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
 nmap <Leader><C-e> <Plug>(caw:a:toggle)
 vmap <Leader><C-e> <Plug>(caw:a:toggle)
->>>>>>> vimrc_comment
 
 " Required:
 call neobundle#end()
