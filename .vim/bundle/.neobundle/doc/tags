@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'b:syntastic_<checker>_exec'	syntastic.txt	/*'b:syntastic_<checker>_exec'*
 'b:syntastic_checkers'	syntastic.txt	/*'b:syntastic_checkers'*
 'b:syntastic_mode'	syntastic.txt	/*'b:syntastic_mode'*
@@ -42,8 +41,6 @@
 'syntastic_warning_symbol'	syntastic.txt	/*'syntastic_warning_symbol'*
 /syntastic/	syntastic.txt	/*\/syntastic\/*
 :Errors	syntastic.txt	/*:Errors*
-=======
->>>>>>> vimrc_comment
 :NeoBundle	neobundle.txt	/*:NeoBundle*
 :NeoBundleCheck	neobundle.txt	/*:NeoBundleCheck*
 :NeoBundleCheckUpdate	neobundle.txt	/*:NeoBundleCheckUpdate*
@@ -70,6 +67,26 @@
 :NeoBundleUpdate	neobundle.txt	/*:NeoBundleUpdate*
 :NeoBundleUpdate!	neobundle.txt	/*:NeoBundleUpdate!*
 :NeoBundleUpdatesLog	neobundle.txt	/*:NeoBundleUpdatesLog*
+:NeoCompleteAutoCompletionLength	neocomplete.txt	/*:NeoCompleteAutoCompletionLength*
+:NeoCompleteBufferMakeCache	neocomplete.txt	/*:NeoCompleteBufferMakeCache*
+:NeoCompleteClean	neocomplete.txt	/*:NeoCompleteClean*
+:NeoCompleteDictionaryMakeCache	neocomplete.txt	/*:NeoCompleteDictionaryMakeCache*
+:NeoCompleteDisable	neocomplete.txt	/*:NeoCompleteDisable*
+:NeoCompleteEnable	neocomplete.txt	/*:NeoCompleteEnable*
+:NeoCompleteLock	neocomplete.txt	/*:NeoCompleteLock*
+:NeoCompleteSetFileType	neocomplete.txt	/*:NeoCompleteSetFileType*
+:NeoCompleteTagMakeCache	neocomplete.txt	/*:NeoCompleteTagMakeCache*
+:NeoCompleteToggle	neocomplete.txt	/*:NeoCompleteToggle*
+:NeoCompleteUnlock	neocomplete.txt	/*:NeoCompleteUnlock*
+:NeoSnippetClearMarkers	neosnippet.txt	/*:NeoSnippetClearMarkers*
+:NeoSnippetEdit	neosnippet.txt	/*:NeoSnippetEdit*
+:NeoSnippetMakeCache	neosnippet.txt	/*:NeoSnippetMakeCache*
+:NeoSnippetSource	neosnippet.txt	/*:NeoSnippetSource*
+:SyntasticCheck	syntastic.txt	/*:SyntasticCheck*
+:SyntasticInfo	syntastic.txt	/*:SyntasticInfo*
+:SyntasticReset	syntastic.txt	/*:SyntasticReset*
+:SyntasticSetLoclist	syntastic.txt	/*:SyntasticSetLoclist*
+:SyntasticToggleMode	syntastic.txt	/*:SyntasticToggleMode*
 <Plug>(caw:a:comment)	caw.txt	/*<Plug>(caw:a:comment)*
 <Plug>(caw:a:toggle)	caw.txt	/*<Plug>(caw:a:toggle)*
 <Plug>(caw:dollarpos:comment)	caw.txt	/*<Plug>(caw:dollarpos:comment)*
@@ -89,6 +106,14 @@
 <Plug>(caw:wrap:comment)	caw.txt	/*<Plug>(caw:wrap:comment)*
 <Plug>(caw:wrap:toggle)	caw.txt	/*<Plug>(caw:wrap:toggle)*
 <Plug>(caw:wrap:uncomment)	caw.txt	/*<Plug>(caw:wrap:uncomment)*
+<Plug>(neocomplete_start_quick_match)	neocomplete.txt	/*<Plug>(neocomplete_start_quick_match)*
+<Plug>(neocomplete_start_unite_complete)	neocomplete.txt	/*<Plug>(neocomplete_start_unite_complete)*
+<Plug>(neosnippet_expand)	neosnippet.txt	/*<Plug>(neosnippet_expand)*
+<Plug>(neosnippet_expand_or_jump)	neosnippet.txt	/*<Plug>(neosnippet_expand_or_jump)*
+<Plug>(neosnippet_jump)	neosnippet.txt	/*<Plug>(neosnippet_jump)*
+<Plug>(neosnippet_jump_or_expand)	neosnippet.txt	/*<Plug>(neosnippet_jump_or_expand)*
+b:neocomplete_sources	neocomplete.txt	/*b:neocomplete_sources*
+b:neosnippet_disable_snippet_triggers	neosnippet.txt	/*b:neosnippet_disable_snippet_triggers*
 caw	caw.txt	/*caw*
 caw-changelog	caw.txt	/*caw-changelog*
 caw-contents	caw.txt	/*caw-contents*
@@ -102,6 +127,7 @@ caw-supported-filetypes	caw.txt	/*caw-supported-filetypes*
 caw-variables	caw.txt	/*caw-variables*
 caw.txt	caw.txt	/*caw.txt*
 caw_default_oneline_comment	caw.txt	/*caw_default_oneline_comment*
+filter-overrides	syntastic.txt	/*filter-overrides*
 g:caw_I_sp	caw.txt	/*g:caw_I_sp*
 g:caw_I_sp_blank	caw.txt	/*g:caw_I_sp_blank*
 g:caw_I_startinsert_at_blank_line	caw.txt	/*g:caw_I_startinsert_at_blank_line*
@@ -169,6 +195,59 @@ g:neobundle#types#hg#command_path	neobundle.txt	/*g:neobundle#types#hg#command_p
 g:neobundle#types#hg#default_protocol	neobundle.txt	/*g:neobundle#types#hg#default_protocol*
 g:neobundle#types#raw#calc_hash_command	neobundle.txt	/*g:neobundle#types#raw#calc_hash_command*
 g:neobundle#types#svn#command_path	neobundle.txt	/*g:neobundle#types#svn#command_path*
+g:neocomplete#auto_completion_start_length	neocomplete.txt	/*g:neocomplete#auto_completion_start_length*
+g:neocomplete#cursor_hold_i_time	neocomplete.txt	/*g:neocomplete#cursor_hold_i_time*
+g:neocomplete#data_directory	neocomplete.txt	/*g:neocomplete#data_directory*
+g:neocomplete#delimiter_patterns	neocomplete.txt	/*g:neocomplete#delimiter_patterns*
+g:neocomplete#disable_auto_complete	neocomplete.txt	/*g:neocomplete#disable_auto_complete*
+g:neocomplete#enable_at_startup	neocomplete.txt	/*g:neocomplete#enable_at_startup*
+g:neocomplete#enable_auto_close_preview	neocomplete.txt	/*g:neocomplete#enable_auto_close_preview*
+g:neocomplete#enable_auto_delimiter	neocomplete.txt	/*g:neocomplete#enable_auto_delimiter*
+g:neocomplete#enable_auto_select	neocomplete.txt	/*g:neocomplete#enable_auto_select*
+g:neocomplete#enable_camel_case	neocomplete.txt	/*g:neocomplete#enable_camel_case*
+g:neocomplete#enable_cursor_hold_i	neocomplete.txt	/*g:neocomplete#enable_cursor_hold_i*
+g:neocomplete#enable_fuzzy_completion	neocomplete.txt	/*g:neocomplete#enable_fuzzy_completion*
+g:neocomplete#enable_ignore_case	neocomplete.txt	/*g:neocomplete#enable_ignore_case*
+g:neocomplete#enable_multibyte_completion	neocomplete.txt	/*g:neocomplete#enable_multibyte_completion*
+g:neocomplete#enable_refresh_always	neocomplete.txt	/*g:neocomplete#enable_refresh_always*
+g:neocomplete#enable_smart_case	neocomplete.txt	/*g:neocomplete#enable_smart_case*
+g:neocomplete#fallback_mappings	neocomplete.txt	/*g:neocomplete#fallback_mappings*
+g:neocomplete#force_omni_input_patterns	neocomplete.txt	/*g:neocomplete#force_omni_input_patterns*
+g:neocomplete#ignore_source_files	neocomplete.txt	/*g:neocomplete#ignore_source_files*
+g:neocomplete#keyword_patterns	neocomplete.txt	/*g:neocomplete#keyword_patterns*
+g:neocomplete#lock_buffer_name_pattern	neocomplete.txt	/*g:neocomplete#lock_buffer_name_pattern*
+g:neocomplete#lock_iminsert	neocomplete.txt	/*g:neocomplete#lock_iminsert*
+g:neocomplete#manual_completion_start_length	neocomplete.txt	/*g:neocomplete#manual_completion_start_length*
+g:neocomplete#max_keyword_width	neocomplete.txt	/*g:neocomplete#max_keyword_width*
+g:neocomplete#max_list	neocomplete.txt	/*g:neocomplete#max_list*
+g:neocomplete#min_keyword_length	neocomplete.txt	/*g:neocomplete#min_keyword_length*
+g:neocomplete#release_cache_time	neocomplete.txt	/*g:neocomplete#release_cache_time*
+g:neocomplete#skip_auto_completion_time	neocomplete.txt	/*g:neocomplete#skip_auto_completion_time*
+g:neocomplete#sources	neocomplete.txt	/*g:neocomplete#sources*
+g:neocomplete#sources#buffer#cache_limit_size	neocomplete.txt	/*g:neocomplete#sources#buffer#cache_limit_size*
+g:neocomplete#sources#buffer#disabled_pattern	neocomplete.txt	/*g:neocomplete#sources#buffer#disabled_pattern*
+g:neocomplete#sources#buffer#max_keyword_width	neocomplete.txt	/*g:neocomplete#sources#buffer#max_keyword_width*
+g:neocomplete#sources#dictionary#dictionaries	neocomplete.txt	/*g:neocomplete#sources#dictionary#dictionaries*
+g:neocomplete#sources#member#input_patterns	neocomplete.txt	/*g:neocomplete#sources#member#input_patterns*
+g:neocomplete#sources#member#prefix_patterns	neocomplete.txt	/*g:neocomplete#sources#member#prefix_patterns*
+g:neocomplete#sources#omni#functions	neocomplete.txt	/*g:neocomplete#sources#omni#functions*
+g:neocomplete#sources#omni#input_patterns	neocomplete.txt	/*g:neocomplete#sources#omni#input_patterns*
+g:neocomplete#sources#tags#cache_limit_size	neocomplete.txt	/*g:neocomplete#sources#tags#cache_limit_size*
+g:neocomplete#sources#vim#complete_functions	neocomplete.txt	/*g:neocomplete#sources#vim#complete_functions*
+g:neocomplete#tags_filter_patterns	neocomplete.txt	/*g:neocomplete#tags_filter_patterns*
+g:neocomplete#text_mode_filetypes	neocomplete.txt	/*g:neocomplete#text_mode_filetypes*
+g:neocomplete#use_vimproc	neocomplete.txt	/*g:neocomplete#use_vimproc*
+g:neosnippet#data_directory	neosnippet.txt	/*g:neosnippet#data_directory*
+g:neosnippet#disable_runtime_snippets	neosnippet.txt	/*g:neosnippet#disable_runtime_snippets*
+g:neosnippet#disable_select_mode_mappings	neosnippet.txt	/*g:neosnippet#disable_select_mode_mappings*
+g:neosnippet#enable_auto_clear_markers	neosnippet.txt	/*g:neosnippet#enable_auto_clear_markers*
+g:neosnippet#enable_completed_snippet	neosnippet.txt	/*g:neosnippet#enable_completed_snippet*
+g:neosnippet#enable_conceal_markers	neosnippet.txt	/*g:neosnippet#enable_conceal_markers*
+g:neosnippet#enable_snipmate_compatibility	neosnippet.txt	/*g:neosnippet#enable_snipmate_compatibility*
+g:neosnippet#expand_word_boundary	neosnippet.txt	/*g:neosnippet#expand_word_boundary*
+g:neosnippet#scope_aliases	neosnippet.txt	/*g:neosnippet#scope_aliases*
+g:neosnippet#snippets_directory	neosnippet.txt	/*g:neosnippet#snippets_directory*
+i_<Plug>(neosnippet_start_unite_snippet)	neosnippet.txt	/*i_<Plug>(neosnippet_start_unite_snippet)*
 lightline	lightline.txt	/*lightline*
 lightline#colorscheme()	lightline.txt	/*lightline#colorscheme()*
 lightline#concatenate()	lightline.txt	/*lightline#concatenate()*
@@ -307,7 +386,6 @@ neobundle-unite-sources	neobundle.txt	/*neobundle-unite-sources*
 neobundle-usage	neobundle.txt	/*neobundle-usage*
 neobundle-variables	neobundle.txt	/*neobundle-variables*
 neobundle.txt	neobundle.txt	/*neobundle.txt*
-<<<<<<< HEAD
 neocomplete	neocomplete.txt	/*neocomplete*
 neocomplete#cancel_popup()	neocomplete.txt	/*neocomplete#cancel_popup()*
 neocomplete#close_popup()	neocomplete.txt	/*neocomplete#close_popup()*
@@ -487,8 +565,8 @@ syntastic-vim-virtualenv	syntastic.txt	/*syntastic-vim-virtualenv*
 syntastic-ycm	syntastic.txt	/*syntastic-ycm*
 syntastic-zsh	syntastic.txt	/*syntastic-zsh*
 syntastic.txt	syntastic.txt	/*syntastic.txt*
-=======
->>>>>>> vimrc_comment
 unite-action-neobundle-lazy	neobundle.txt	/*unite-action-neobundle-lazy*
 unite-action-neobundle-search	neobundle.txt	/*unite-action-neobundle-search*
 unite-kind-neobundle	neobundle.txt	/*unite-kind-neobundle*
+x_<Plug>(neosnippet_expand_target)	neosnippet.txt	/*x_<Plug>(neosnippet_expand_target)*
+x_<Plug>(neosnippet_register_oneshot_snippet)	neosnippet.txt	/*x_<Plug>(neosnippet_register_oneshot_snippet)*

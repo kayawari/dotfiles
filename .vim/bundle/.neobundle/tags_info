@@ -1,13 +1,7 @@
-<<<<<<< HEAD
+caw.vim
 lightline.vim
 neobundle.vim
 neocomplete
 neosnippet
-nerdtree
 syntastic
-=======
-caw.vim
-lightline.vim
-neobundle.vim
->>>>>>> vimrc_comment
 unite.vim
