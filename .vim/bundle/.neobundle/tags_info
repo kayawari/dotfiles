@@ -1,10 +1,7 @@
-jshint2.vim
 lightline.vim
 neobundle.vim
 neocomplete
 neosnippet
-neosnippet-snippets
 nerdtree
 syntastic
 unite.vim
-vim-javascript
