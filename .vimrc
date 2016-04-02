@@ -33,7 +33,6 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
 
-colorscheme molokai
 syntax on
 set t_Co=256 " screen's color setted 256 color mode. 
 set backspace=indent,eol,start " use backspace key.
