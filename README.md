@@ -7,7 +7,7 @@
 
 ### 他の環境での反映方法
 ``` 
-$ cd doffilesを作りたいディレクトリに移動（~/配下など）
+$ cd dotfilesを作りたいディレクトリに移動（~/ ：チルダ配下）
 $ git clone https://github.com/kayawari/dotfiles.git
 $ chmod +x dotfilesLink.sh
 //下でシンボリックリンクをルートに作る。管理はdotfiles配下に入れる。
