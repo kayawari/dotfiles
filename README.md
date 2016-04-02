@@ -7,12 +7,29 @@
 
 ### 他の環境での反映方法
 ``` 
-$ cd dotfilesを作りたいディレクトリに移動（~/ ：チルダ配下）
+$ ユーザーディレクトリ（~：チルダ配下）に移動
 $ git clone https://github.com/kayawari/dotfiles.git
+$ cd dotfiles
 $ chmod +x dotfilesLink.sh
 //下でシンボリックリンクをルートに作る。管理はdotfiles配下に入れる。
 $ ./dotfilesLink.sh 
+
+どうも.vim/bundle配下は作りなおさないと行けないようなので、git cloneし直す。
+$ cd ~/dotfiles/.vim/
+$ rm -rf bundle
+$ mkdir bundle
+$ cd bundle
+$ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+（git clone先は更新されてるかもしれないので、要チェック）
+
+これで、vim を起動すればステータスバーにinstallするかどうか確認confirmが出るはず。
 ```
+
+### oh-my-zsh！！
+以下参考
+[Mac OS X で zsh ＋ oh-my-zsh の環境を作って一通り設定するまで](http://qiita.com/udzura/items/0d08d71d809bfd8c5981)  
+ちなみに、もうoh-my-zshは古いそうようです。  
+[まだ oh-my-zsh で消耗してるの？](http://qiita.com/b4b4r07/items/875235f6122a6d779306)  
 
 ###_参考サイト_
 * http://nwpct1.hatenablog.com/entry/2014/01/14/214128
