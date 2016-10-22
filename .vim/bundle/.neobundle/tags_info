@@ -1,4 +1,5 @@
 caw.vim
 lightline.vim
 neobundle.vim
+nerdtree
 unite.vim

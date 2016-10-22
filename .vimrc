@@ -20,6 +20,8 @@ nmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
 vmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
 nmap <Leader><C-e> <Plug>(caw:a:toggle)
 vmap <Leader><C-e> <Plug>(caw:a:toggle)
+NeoBundle 'scrooloose/nerdtree'
+nnoremap :tre :NERDTree
 
 " Required:
 call neobundle#end()
