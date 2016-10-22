@@ -1,5 +1,6 @@
 caw.vim
 lightline.vim
 neobundle.vim
+neocomplete.vim
 nerdtree
 unite.vim
