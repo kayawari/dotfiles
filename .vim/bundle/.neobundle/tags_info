@@ -5,3 +5,4 @@ neocomplete.vim
 nerdtree
 unite.vim
 vim-gitgutter
+vim-indent-guides

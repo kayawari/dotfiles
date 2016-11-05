@@ -102,6 +102,13 @@ let g:gitgutter_highlight_lines = 1
 let g:gitgutter_override_sign_column_highlight = 0
 highlight SignColumn ctermbg=black
 
+NeoBundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree'] "インデントハイライトを無効にしたいファイルタイプ　
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=grey   ctermbg=grey
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkgrey
+
 " Required:
 call neobundle#end()
 
