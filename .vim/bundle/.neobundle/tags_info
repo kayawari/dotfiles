@@ -6,3 +6,4 @@ nerdtree
 unite.vim
 vim-gitgutter
 vim-indent-guides
+vim-surround

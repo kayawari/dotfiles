@@ -240,6 +240,7 @@ NERDTreePathListenerAPI	NERD_tree.txt	/*NERDTreePathListenerAPI*
 NERDTreeRender()	NERD_tree.txt	/*NERDTreeRender()*
 NERD_tree.txt	NERD_tree.txt	/*NERD_tree.txt*
 b:neocomplete_sources	neocomplete.txt	/*b:neocomplete_sources*
+cS	surround.txt	/*cS*
 caw	caw.txt	/*caw*
 caw-changelog	caw.txt	/*caw-changelog*
 caw-contents	caw.txt	/*caw-contents*
@@ -253,6 +254,8 @@ caw-supported-filetypes	caw.txt	/*caw-supported-filetypes*
 caw-variables	caw.txt	/*caw-variables*
 caw.txt	caw.txt	/*caw.txt*
 caw_default_oneline_comment	caw.txt	/*caw_default_oneline_comment*
+cs	surround.txt	/*cs*
+ds	surround.txt	/*ds*
 g:caw_I_sp	caw.txt	/*g:caw_I_sp*
 g:caw_I_sp_blank	caw.txt	/*g:caw_I_sp_blank*
 g:caw_I_startinsert_at_blank_line	caw.txt	/*g:caw_I_startinsert_at_blank_line*
@@ -442,6 +445,8 @@ i_<Plug>(unite_toggle_auto_preview)	unite.txt	/*i_<Plug>(unite_toggle_auto_previ
 i_<Plug>(unite_toggle_mark_current_candidate)	unite.txt	/*i_<Plug>(unite_toggle_mark_current_candidate)*
 i_<Plug>(unite_toggle_mark_current_candidate_up)	unite.txt	/*i_<Plug>(unite_toggle_mark_current_candidate_up)*
 i_<Plug>(unite_toggle_transpose_window)	unite.txt	/*i_<Plug>(unite_toggle_transpose_window)*
+i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
+i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 indent-guides	indent_guides.txt	/*indent-guides*
 indent-guides-about	indent_guides.txt	/*indent-guides-about*
 indent-guides-changelog	indent_guides.txt	/*indent-guides-changelog*
@@ -691,6 +696,13 @@ neocomplete-unite-sources	neocomplete.txt	/*neocomplete-unite-sources*
 neocomplete-user-sources	neocomplete.txt	/*neocomplete-user-sources*
 neocomplete-variables	neocomplete.txt	/*neocomplete-variables*
 neocomplete.txt	neocomplete.txt	/*neocomplete.txt*
+surround	surround.txt	/*surround*
+surround-customizing	surround.txt	/*surround-customizing*
+surround-issues	surround.txt	/*surround-issues*
+surround-mappings	surround.txt	/*surround-mappings*
+surround-replacements	surround.txt	/*surround-replacements*
+surround-targets	surround.txt	/*surround-targets*
+surround.txt	surround.txt	/*surround.txt*
 unite	unite.txt	/*unite*
 unite#action#do_candidates()	unite.txt	/*unite#action#do_candidates()*
 unite#custom#action()	unite.txt	/*unite#custom#action()*
@@ -986,4 +998,10 @@ unite-variables	unite.txt	/*unite-variables*
 unite.txt	unite.txt	/*unite.txt*
 unite.vim	unite.txt	/*unite.vim*
 unite_default_key_mappings	unite.txt	/*unite_default_key_mappings*
+vS	surround.txt	/*vS*
 v_<Plug>(unite_toggle_selected_candidates)	unite.txt	/*v_<Plug>(unite_toggle_selected_candidates)*
+vgS	surround.txt	/*vgS*
+yS	surround.txt	/*yS*
+ySS	surround.txt	/*ySS*
+ys	surround.txt	/*ys*
+yss	surround.txt	/*yss*

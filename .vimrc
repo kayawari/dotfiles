@@ -109,6 +109,8 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=grey   ctermbg=grey
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkgrey
 
+NeoBundle 'tpope/vim-surround'
+
 " Required:
 call neobundle#end()
 
