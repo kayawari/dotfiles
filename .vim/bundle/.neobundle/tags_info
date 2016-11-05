@@ -4,3 +4,4 @@ neobundle.vim
 neocomplete.vim
 nerdtree
 unite.vim
+vim-gitgutter

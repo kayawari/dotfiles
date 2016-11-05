@@ -97,6 +97,10 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " =================================================================
 " =================== End neocomplete setting =====================
 " =================================================================
+NeoBundle 'airblade/vim-gitgutter'
+let g:gitgutter_highlight_lines = 1
+let g:gitgutter_override_sign_column_highlight = 0
+highlight SignColumn ctermbg=black
 
 " Required:
 call neobundle#end()
