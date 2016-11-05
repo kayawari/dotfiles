@@ -124,6 +124,7 @@ NeoBundleCheck
 
 
 syntax on
+colorscheme molokai
 set t_Co=256 " screen's color setted 256 color mode. 
 set backspace=indent,eol,start " use backspace key.
 set clipboard=unnamed,autoselect " use OS's clipoard.
