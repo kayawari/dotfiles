@@ -27,9 +27,11 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 ### zshについて
 mac osの場合にデフォルトでzshが`/usr/bin`に入っているけれど、バージョンが古いのでhomebrewでインストールしてください。
+```
 $ cat /etc/shells
 $ sudo echo '"/usr/local/bin/zsh"' >> /etc/shells
 $ chsh -s /usr/local/bin/zsh
+```
 インストールするシェルのパスを確認します。多分新しくhomebrewで入れたzshのパスは入っていないと思うので、`etc/shells`に新しいzshのパスを追加
 最後に、chsh -sコマンドでログインシェルに反映させる
 
