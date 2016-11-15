@@ -25,11 +25,13 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 これで、vim を起動すればステータスバーにinstallするかどうか確認confirmが出るはず。
 ```
 
-### oh-my-zsh！！
-以下参考
-[Mac OS X で zsh ＋ oh-my-zsh の環境を作って一通り設定するまで](http://qiita.com/udzura/items/0d08d71d809bfd8c5981)  
-ちなみに、もうoh-my-zshは古いそうようです。  
-[まだ oh-my-zsh で消耗してるの？](http://qiita.com/b4b4r07/items/875235f6122a6d779306)  
+### zshについて
+mac osの場合にデフォルトでzshが`/usr/bin`に入っているけれど、バージョンが古いのでhomebrewでインストールしてください。
+$ cat /etc/shells
+$ sudo echo '"/usr/local/bin/zsh"' >> /etc/shells
+$ chsh -s /usr/local/bin/zsh
+インストールするシェルのパスを確認します。多分新しくhomebrewで入れたzshのパスは入っていないと思うので、`etc/shells`に新しいzshのパスを追加
+最後に、chsh -sコマンドでログインシェルに反映させる
 
 ###_参考サイト_
 * http://nwpct1.hatenablog.com/entry/2014/01/14/214128
