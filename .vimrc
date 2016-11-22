@@ -111,6 +111,8 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkg
 
 NeoBundle 'tpope/vim-surround'
 
+NeoBundle "ctrlpvim/ctrlp.vim"
+
 " Required:
 call neobundle#end()
 

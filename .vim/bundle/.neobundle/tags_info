@@ -1,4 +1,5 @@
 caw.vim
+ctrlp.vim
 lightline.vim
 neobundle.vim
 neocomplete.vim
