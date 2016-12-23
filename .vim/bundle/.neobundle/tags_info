@@ -5,6 +5,7 @@ neobundle.vim
 neocomplete.vim
 nerdtree
 unite.vim
+vim-endwise
 vim-gitgutter
 vim-indent-guides
 vim-rails
