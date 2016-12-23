@@ -113,6 +113,8 @@ NeoBundle 'tpope/vim-surround'
 
 NeoBundle "ctrlpvim/ctrlp.vim"
 
+NeoBundle "tpope/vim-rails"
+
 " Required:
 call neobundle#end()
 
