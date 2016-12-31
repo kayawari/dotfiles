@@ -44,6 +44,9 @@ endfunction
 
 
 NeoBundle "tyru/caw.vim.git"
+" ctrl + / でコメントアウト
+nmap <C-_> <Plug>(caw:hatpos:toggle)
+vmap <C-_> <Plug>(caw:hatpos:toggle)
 
 NeoBundle 'scrooloose/nerdtree'
 nnoremap :tre :NERDTree
