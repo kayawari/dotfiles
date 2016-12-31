@@ -14,8 +14,32 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 " Add or remove your Bundles here:
-NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'itchyny/lightline.vim'
+let g:lightline = {
+\ 'colorscheme' : 'molokai',
+\ 'active': {
+\   'left': [['mode'],['fugitive','filename']],
+\   'right': [[ 'syntastic', 'lineinfo' ], [ 'fileformat', 'fileencoding', 'filetype' ]]
+\   },
+\ 'component' : {
+\   'readonly': '%{&filetype=="help"?"":&readonly?"RO":""}',
+\   },
+\ 'component_function': {
+\   'fugitive': 'MyFugitive',
+\   
+\ },
+\ }
+function! MyFugitive()
+  try
+    if &ft !~? 'vimfiler\|gundo' && exists('*fugitive#head') && strlen(fugitive#head())
+      return fugitive#head()
+    endif
+  catch
+  endtry
+  return ''
+endfunction
+
 NeoBundle "tyru/caw.vim.git"
 nmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
 vmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
