@@ -152,7 +152,6 @@ NeoBundle "ctrlpvim/ctrlp.vim"
 
 NeoBundle "tpope/vim-rails"
 
-NeoBundle "tpope/vim-endwise"
 
 " Required:
 call neobundle#end()
