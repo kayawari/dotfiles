@@ -30,6 +30,8 @@ let g:lightline = {
 \   
 \ },
 \ }
+
+" lightlineにfugitiveのメソッドで呼び出したブランチ名を表示する
 function! MyFugitive()
   try
     if &ft !~? 'vimfiler\|gundo' && exists('*fugitive#head') && strlen(fugitive#head())
@@ -39,6 +41,7 @@ function! MyFugitive()
   endtry
   return ''
 endfunction
+
 
 NeoBundle "tyru/caw.vim.git"
 nmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
