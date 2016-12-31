@@ -146,12 +146,13 @@ NeoBundle 'soramugi/auto-ctags.vim'
 " ファイル保存時にctagsを更新
 let g:auto_ctags = 1
 
-NeoBundle 'tpope/vim-surround'
+NeoBundle "tpope/vim-surround"
 
 NeoBundle "ctrlpvim/ctrlp.vim"
 
 NeoBundle "tpope/vim-rails"
 
+NeoBundle "basyura/unite-rails"
 
 " Required:
 call neobundle#end()

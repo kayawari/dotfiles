@@ -5,6 +5,7 @@ lightline.vim
 neobundle.vim
 neocomplete.vim
 nerdtree
+unite-rails
 unite.vim
 vim-fugitive
 vim-gitgutter
