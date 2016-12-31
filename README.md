@@ -43,9 +43,10 @@ $ chsh -s /usr/local/bin/zsh
 * [tyru/caw.vim](https://github.com/tyru/caw.vim)
 * [Shougo/Unite.vim](https://github.com/Shougo/unite.vim)
 
-###プラグイン
-* neobundle ：プラグイン管理
-* unite.vim :ファイル一覧など表示
-* lightline :ステータスバーをちょっとかっこよく
-* caw.vim :コメントアウトを便利に
-
+### Docs
+|コメンド|処理|
+|:----------:|:-----------:|
+|ctrl + /|gci（caw.vimでコメントアウト）|
+|ctrl + i|cwi（テキストオブエジェクト削除後にインサートモード）|
+|shift + a|行頭へ|
+|shift + z|行末へ|
