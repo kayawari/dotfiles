@@ -195,6 +195,9 @@ set ignorecase
 set incsearch " Use incremantal searching mode.
 set wrapscan
 
-" Cursor moves to top or bottom of line.
+" shift+aで行頭, shift+zで行末に移動
 noremap <S-a> <Esc>^
 noremap <S-z> <Esc>$
+
+" ciw（テキストオブジェクトを削除してインサートモードに入るバインドを設定）
+nmap <C-i> ciw
