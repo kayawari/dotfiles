@@ -13,8 +13,12 @@ call neobundle#begin(expand('~/.vim/bundle'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
-" Add or remove your Bundles here:
+
+" ==================================
+" ここから下にプラグインを追加してください
+" ==================================
 NeoBundle 'tpope/vim-fugitive'
+
 NeoBundle 'itchyny/lightline.vim'
 let g:lightline = {
 \ 'colorscheme' : 'molokai',
@@ -53,7 +57,7 @@ nnoremap :tre :NERDTree
 
 NeoBundle 'Shougo/neocomplete.vim'
 " =================================================================
-" =================== Start neocomplete setting =====================
+" Start neocomplete setting
 " =================================================================
 "Note: This option must be set in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 let g:acp_enableAtStartup = 0
@@ -123,8 +127,9 @@ endif
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " =================================================================
-" =================== End neocomplete setting =====================
+" End neocomplete setting =====================
 " =================================================================
+
 NeoBundle 'airblade/vim-gitgutter'
 let g:gitgutter_highlight_lines = 1
 let g:gitgutter_override_sign_column_highlight = 0
@@ -136,6 +141,10 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree'] "インデントハ
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=grey   ctermbg=grey
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkgrey
+
+NeoBundle 'soramugi/auto-ctags.vim'
+" ファイル保存時にctagsを更新
+let g:auto_ctags = 1
 
 NeoBundle 'tpope/vim-surround'
 
