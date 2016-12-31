@@ -8,5 +8,6 @@ unite.vim
 vim-endwise
 vim-gitgutter
 vim-indent-guides
+vim-powerline
 vim-rails
 vim-surround

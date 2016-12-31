@@ -14,6 +14,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 " Add or remove your Bundles here:
+NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle "tyru/caw.vim.git"
 nmap <Leader><Leader> <Plug>(caw:hatpos:toggle)
