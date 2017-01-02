@@ -67,10 +67,12 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " Define dictionary.
+" https://github.com/pocke/dicts - Ruby用の辞書
 let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'default' : '',
     \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
+    \ 'scheme' : $HOME.'/.gosh_completions',
+    \ 'ruby': $HOME. '/dictionaries/ruby.dict'
         \ }
 
 " Define keyword.
@@ -203,6 +205,7 @@ set smartcase
 set ignorecase
 set incsearch " Use incremantal searching mode.
 set wrapscan
+set nopaste
 
 " shift+aで行頭, shift+zで行末に移動
 noremap <S-a> <Esc>^
