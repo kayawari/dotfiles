@@ -192,6 +192,7 @@ set autoread
 set helpheight=999 " If call vim's help, show help page in full screen.
 set history=5000
 set whichwrap+=h,l,<,>,[,],b,s
+set nopaste
 
 " Tab and space setting.
 set expandtab " Tabs convert to space key.
@@ -205,7 +206,6 @@ set smartcase
 set ignorecase
 set incsearch " Use incremantal searching mode.
 set wrapscan
-set nopaste
 
 " shift+aで行頭, shift+zで行末に移動
 noremap <S-a> <Esc>^
