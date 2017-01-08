@@ -1,4 +1,5 @@
 # My dotfiles
+* .zshrc
 * .bashrc
 * .bash_profile
 * .vimrc
