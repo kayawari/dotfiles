@@ -23,8 +23,7 @@ RPROMPT="%1(v|%F{blue}%1v%f|)"
 autoload colors
 colors
 
-PROMPT="
-%{${fg[yellow]}%}%~%{${reset_color}%} 
+PROMPT="%{${fg[yellow]}%}%~%{${reset_color}%} 
 [%n]$ "
 
 # =====================================
