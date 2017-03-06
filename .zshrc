@@ -31,13 +31,16 @@ PROMPT="%{${fg[yellow]}%}%~%{${reset_color}%}
 # original setting
 # =====================================
 alias h='history'
+alias g='grep'
 alias l='ls -la'
 alias lt='ls -lat'
 
 ~/dotfiles/git-completion.bash
 
+# composer 
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 
+# rbenv
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/shims:$PATH"
