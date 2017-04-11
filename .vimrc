@@ -23,7 +23,7 @@ NeoBundle 'itchyny/lightline.vim'
 let g:lightline = {
 \ 'colorscheme' : 'molokai',
 \ 'active': {
-\   'left': [['mode'],['fugitive','filename']],
+\   'left': [['mode'],['dir'],['fugitive','filename']],
 \   'right': [[ 'syntastic', 'lineinfo' ], [ 'fileformat', 'fileencoding', 'filetype' ]]
 \   },
 \ 'component' : {
@@ -34,6 +34,9 @@ let g:lightline = {
 \   
 \ },
 \ }
+
+let g:lightline.component = {}
+let g:lightline.component.dir = '%.35(%{expand("%:h:s?\\S$?\\0/?")}%)'
 
 " lightlineにfugitiveのメソッドで呼び出したブランチ名を表示する
 function! MyFugitive()
