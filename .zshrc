@@ -44,3 +44,7 @@ export PATH="/usr/local/sbin:$PATH"
 # rbenv
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/shims:$PATH"
+
+# yarn
+export PATH="$PATH:`yarn global bin`"
+
