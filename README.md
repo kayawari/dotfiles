@@ -36,7 +36,7 @@ $ chsh -s /usr/local/bin/zsh
 インストールするシェルのパスを確認します。多分新しくhomebrewで入れたzshのパスは入っていないと思うので、`etc/shells`に新しいzshのパスを追加
 最後に、chsh -sコマンドでログインシェルに反映させる
 
-###_参考サイト_
+### 参考サイト_
 * http://nwpct1.hatenablog.com/entry/2014/01/14/214128
 * [PHPファイルにHTMLを記述したとき、Vimのオートインデントがおかしくなる問題 - Qiita](http://qiita.com/hashiohiro/items/71a47061e91b61bbb189)
 * [set pasteについて](http://qiita.com/quwa/items/019250dbca167985fe32)
