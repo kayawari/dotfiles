@@ -34,6 +34,8 @@ alias h='history'
 alias g='grep'
 alias l='ls -la'
 alias lt='ls -lat'
+alias gst='git status'
+alias gif='git diff'
 
 ~/dotfiles/git-completion.bash
 
