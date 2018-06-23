@@ -3,3 +3,5 @@
   email = kayamelo@gmail.com
 [core]
   excludesfile = ~/dotfiles/.gitignore_global
+[ghq]
+  root = ~/dev/
