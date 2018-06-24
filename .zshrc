@@ -57,3 +57,13 @@ export SDKMAN_DIR="/Users/takayuki/.sdkman"
 
 #phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+# setting peco
+# https://github.com/peco/peco
+function peco-select-history() {
+    BUFFER="$(history -nr 1 | awk '!a[$0]++' | peco --query "$LBUFFER" | sed 's/\\n/\n/')"
+    CURSOR=$#BUFFER             # カーソルを文末に移動
+    zle -R -c                   # refresh
+}
+zle -N peco-select-history
+bindkey '^R' peco-select-history
