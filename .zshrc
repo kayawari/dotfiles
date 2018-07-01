@@ -36,6 +36,7 @@ alias l='ls -la'
 alias lt='ls -lat'
 alias gst='git status'
 alias gif='git diff'
+alias gitout='git checkout'
 
 ~/dotfiles/git-completion.bash
 
