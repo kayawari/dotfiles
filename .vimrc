@@ -21,7 +21,6 @@ if dein#load_state('~/.cache/dein')
   let NERDTreeShowHidden=1
   let g:NERDTreeDirArrowExpandable = '▸'
   let g:NERDTreeDirArrowCollapsible = '▾'
-  call dein#add('Xuyuanp/nerdtree-git-plugin')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
