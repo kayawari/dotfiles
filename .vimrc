@@ -21,6 +21,9 @@ if dein#load_state('~/.cache/dein')
   let NERDTreeShowHidden=1
   let g:NERDTreeDirArrowExpandable = '▸'
   let g:NERDTreeDirArrowCollapsible = '▾'
+  call dein#add('airblade/vim-gitgutter')
+  let g:gitgutter_highlight_lines = 1
+  set updatetime=1000
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
