@@ -24,6 +24,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('airblade/vim-gitgutter')
   let g:gitgutter_highlight_lines = 1
   set updatetime=200
+  call dein#add("tpope/vim-fugitive")
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
