@@ -1,4 +1,4 @@
-set encoding=utf-8
+
 scriptencoding utf-8
 
 "dein Scripts-----------------------------
@@ -59,6 +59,16 @@ if dein#load_state('~/.cache/dein')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
   let g:deoplete#enable_at_startup = 1
+
+  call dein#add('Shougo/deoplete-rct',      { 'on_ft': 'ruby' })
+  call dein#add('fishbullet/deoplete-ruby', { 'on_ft': 'ruby' })
+
+  " you need install rcodetools or solargraph
+  " gem install rcodetools
+  " gem install solargraph
+  call dein#add('osyo-manga/vim-monster',   { 'on_ft': 'ruby' })
+  let g:deoplete#sources#omni#input_patterns = {"ruby" : '[^. *\t]\.\w*\|\h\w*::',}
+  call dein#add('tpope/vim-endwise',        { 'on_ft': 'ruby' })
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
