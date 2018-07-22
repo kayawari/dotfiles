@@ -43,6 +43,12 @@ if dein#load_state('~/.cache/dein')
   " ctrl + / でコメントアウト
   nmap <C-_> <Plug>(caw:hatpos:toggle)
   vmap <C-_> <Plug>(caw:hatpos:toggle)
+  call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('rking/ag.vim')
+  if executable('ag')
+    let g:ctrlp_use_caching=0
+    let g:ctrlp_user_command='ag %s -i --nogroup -g ""'
+  endif
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
