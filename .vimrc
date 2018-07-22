@@ -83,6 +83,13 @@ set nobackup " do not create swp file.
 set noswapfile
 set shell=zsh
 
+" setting char code
+" https://qiita.com/ahiruman5/items/4f3c845500c172a02935#-%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89
+set fileencoding=utf-8
+set fileencodings=ucs-boms,utf-8,euc-jp,cp932
+set fileformats=unix,dos,mac
+set ambiwidth=double
+
 set cursorline 
 set scrolloff=7
 set ruler " show ruler on status bar.
