@@ -72,6 +72,7 @@ set title " show file's title.
 set number
 set showcmd
 set laststatus=2 " Status bar's height.
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ \[ENC=%{&fileencoding}]%P
 set cmdheight=1 " message bar in status bar????
 set confirm " If you forget to save current file, confirm to save.
 set autoread
