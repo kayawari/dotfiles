@@ -103,6 +103,7 @@ set cmdheight=1 " message bar in status bar????
 set confirm " If you forget to save current file, confirm to save.
 set autoread
 set helpheight=999 " If call vim's help, show help page in full screen.
+set wildmenu
 set history=5000
 set whichwrap+=h,l,<,>,[,],b,s
 set nopaste
