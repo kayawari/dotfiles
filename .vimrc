@@ -53,6 +53,12 @@ if dein#load_state('~/.cache/dein')
     let g:ctrlp_user_command='ag %s -i --nogroup -g ""'
   endif
   call dein#add('bronson/vim-trailing-whitespace')
+  call dein#add('Shouge/deoplete.vim')
+  if !has('nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
+  let g:deoplete#enable_at_startup = 1
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
