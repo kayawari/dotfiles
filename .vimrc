@@ -1,3 +1,6 @@
+set encoding=utf-8
+scriptencoding utf-8
+
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
@@ -28,7 +31,7 @@ if dein#load_state('~/.cache/dein')
   " NOTE: fugitiveプラグインのGbrowseコマンドに依存しています
   call dein#add("tpope/vim-rhubarb")
   nnoremap [fugitive]  <Nop>
-  nmap <space>g [fugitive]
+  nmap <C-g> [fugitive]
   nnoremap <silent> [fugitive]s :Gstatus<CR><C-w>T
   nnoremap <silent> [fugitive]l :Glog<CR>
   nnoremap <silent> [fugitive]d :Gdiff<CR>
