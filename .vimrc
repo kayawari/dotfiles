@@ -52,6 +52,7 @@ if dein#load_state('~/.cache/dein')
     let g:ctrlp_use_caching=0
     let g:ctrlp_user_command='ag %s -i --nogroup -g ""'
   endif
+  call dein#add('bronson/vim-trailing-whitespace')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
@@ -74,7 +75,7 @@ endif
 
 syntax on
 colorscheme molokai
-set t_Co=256 " screen's color setted 256 color mode. 
+set t_Co=256 " screen's color setted 256 color mode.
 set backspace=indent,eol,start " use backspace key.
 set clipboard=unnamed,autoselect " use OS's clipoard.
 set paste
@@ -90,7 +91,7 @@ set fileencodings=ucs-boms,utf-8,euc-jp,cp932
 set fileformats=unix,dos,mac
 set ambiwidth=double
 
-set cursorline 
+set cursorline
 set scrolloff=7
 set ruler " show ruler on status bar.
 set title " show file's title.
