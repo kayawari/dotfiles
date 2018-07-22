@@ -25,6 +25,15 @@ if dein#load_state('~/.cache/dein')
   let g:gitgutter_highlight_lines = 1
   set updatetime=200
   call dein#add("tpope/vim-fugitive")
+  nnoremap [fugitive]  <Nop>
+  nmap <space>g [fugitive]
+  nnoremap <silent> [fugitive]s :Gstatus<CR><C-w>T
+  nnoremap <silent> [fugitive]l :Glog<CR>
+  nnoremap <silent> [fugitive]d :Gdiff<CR>
+  nnoremap <silent> [fugitive]a :Gwrite<CR>
+  nnoremap <silent> [fugitive]c :Gcommit<CR>
+  nnoremap <silent> [fugitive]b :Gblame<CR>
+  nnoremap <silent> [fugitive]m :Gmerge<CR>
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
