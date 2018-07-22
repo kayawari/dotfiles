@@ -39,6 +39,10 @@ if dein#load_state('~/.cache/dein')
   call dein#add('nathanaelkane/vim-indent-guides')
   let g:indent_guides_enable_on_vim_startup = 1
   let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+  call dein#add('tyru/caw.vim.git')
+  " ctrl + / でコメントアウト
+  nmap <C-_> <Plug>(caw:hatpos:toggle)
+  vmap <C-_> <Plug>(caw:hatpos:toggle)
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
