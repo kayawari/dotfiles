@@ -34,7 +34,6 @@ if dein#load_state('~/.cache/dein')
   nnoremap <silent> [fugitive]d :Gdiff<CR>
   nnoremap <silent> [fugitive]a :Gwrite<CR>
   nnoremap <silent> [fugitive]c :Gcommit<CR>
-  nnoremap <silent> [fugitive]b :Gblame<CR>
   nnoremap <silent> [fugitive]m :Gmerge<CR>
   nnoremap <silent> [fugitive]hub :Gbrowse<CR>
 
