@@ -56,13 +56,13 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Shougo/deoplete.nvim')
   if !has('nvim')
     call dein#add('roxma/nvim-yarp')
+    " TODO: vim-hug-neovim-rpcがpython関連で上手くインストールできていないみたい
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
   let g:deoplete#enable_at_startup = 1
 
   call dein#add('Shougo/deoplete-rct',      { 'on_ft': 'ruby' })
   call dein#add('fishbullet/deoplete-ruby', { 'on_ft': 'ruby' })
-
   " you need install rcodetools or solargraph
   " gem install rcodetools
   " gem install solargraph
