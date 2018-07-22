@@ -36,7 +36,7 @@ if dein#load_state('~/.cache/dein')
   nnoremap <silent> [fugitive]c :Gcommit<CR>
   nnoremap <silent> [fugitive]b :Gblame<CR>
   nnoremap <silent> [fugitive]m :Gmerge<CR>
-  nnoremap <silent> [fugitive]view :Gbrowse<CR>
+  nnoremap <silent> [fugitive]hub :Gbrowse<CR>
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
