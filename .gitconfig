@@ -5,4 +5,4 @@
   excludesfile = ~/dotfiles/.gitignore_global
 	editor = /usr/local/bin/vim
 [ghq]
-  root = ~/dev/
+  root = ~/src/
