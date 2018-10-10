@@ -30,13 +30,11 @@ PROMPT="%{${fg[yellow]}%}%~%{${reset_color}%}
 # =====================================
 # original setting
 # =====================================
-alias h='history'
-alias g='grep'
-alias l='ls -la'
-alias lt='ls -lat'
+alias l='ls -lat'
 alias gst='git status'
 alias gif='git diff'
-alias gitout='git checkout'
+alias gch='git checkout'
+alias glo='git log --oneline'
 
 ~/dotfiles/git-completion.bash
 
