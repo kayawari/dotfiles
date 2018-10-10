@@ -70,6 +70,8 @@ if dein#load_state('~/.cache/dein')
   let g:deoplete#sources#omni#input_patterns = {"ruby" : '[^. *\t]\.\w*\|\h\w*::',}
   call dein#add('tpope/vim-endwise',        { 'on_ft': 'ruby' })
 
+  call dein#add('posva/vim-vue')
+
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
 
