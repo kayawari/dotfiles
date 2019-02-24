@@ -68,6 +68,9 @@ zle -N peco-select-history
 bindkey '^R' peco-select-history
 export PATH="/usr/local/opt/libxml2/bin:$PATH"
 
+unsetopt inc_append_history
+unsetopt share_history
+
 # =====================================
 # plugin 
 # =====================================
