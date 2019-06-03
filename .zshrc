@@ -37,7 +37,7 @@ alias gch='git checkout'
 alias glo='git log --oneline'
 
 ~/dotfiles/git-completion.bash
-source ./zsh_opt/git_status.zsh
+source ~/dotfiles/zsh_opt/git_status.zsh
 
 # composer 
 export PATH=$HOME/.composer/vendor/bin:$PATH
