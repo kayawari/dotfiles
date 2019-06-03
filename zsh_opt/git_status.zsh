@@ -9,6 +9,6 @@ if [ ! -e ".git" ]; then
   return
 else
   precmd () { vcs_info }
-  RPROMPT=$RPROMPT'|${vcs_info_msg_0_}'
+  RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 fi
 
