@@ -36,6 +36,19 @@ $ chsh -s /usr/local/bin/zsh
 インストールするシェルのパスを確認します。多分新しくhomebrewで入れたzshのパスは入っていないと思うので、`etc/shells`に新しいzshのパスを追加
 最後に、chsh -sコマンドでログインシェルに反映させる
 
+### zplugについて
+zplugでロードしているプラグインもあります。
+ref: https://github.com/zplug/zplug/blob/master/doc/guide/ja/README.md
+
+しかし設定を変更したときに、意図せず更新前のキャッシュを利用してしまうことがあります。手動でキャッシュを削除するには以下のコマンドを実行。
+```
+zplug clear
+```
+
+#### zplugのキャッシュについて
+zplugはプラグインのロードを高速化するためにキャッシュを利用しています。
+
+
 ### 参考サイト
 * http://nwpct1.hatenablog.com/entry/2014/01/14/214128
 * [PHPファイルにHTMLを記述したとき、Vimのオートインデントがおかしくなる問題 - Qiita](http://qiita.com/hashiohiro/items/71a47061e91b61bbb189)
