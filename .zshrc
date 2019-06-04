@@ -37,7 +37,7 @@ alias gch='git checkout'
 alias glo='git log --oneline'
 
 # ghq alias
-alias repos='ghq look $(ghq list | peco)'
+alias repo='ghq look $(ghq list | peco)'
 
 ~/dotfiles/git-completion.bash
 source ~/dotfiles/zsh_opt/git_status.zsh
