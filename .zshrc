@@ -40,6 +40,10 @@ alias branch='git checkout $(git branch | peco)'
 # ghq alias
 alias repo='ghq look $(ghq list | peco)'
 
+# hub alias
+# Open the current pull request page
+alias prpr='hub browse -- "pull/$(git symbolic-ref --short HEAD)"'
+
 ~/dotfiles/git-completion.bash
 source ~/dotfiles/zsh_opt/git_status.zsh
 
