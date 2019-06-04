@@ -35,6 +35,7 @@ alias gst='git status'
 alias gif='git diff'
 alias gch='git checkout'
 alias glo='git log --oneline'
+alias branch='git checkout $(git branch | peco)'
 
 # ghq alias
 alias repo='ghq look $(ghq list | peco)'
