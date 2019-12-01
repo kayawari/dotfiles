@@ -3,6 +3,9 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=100000
 
+# iterm用の設定
+bindkey -e
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/takayuki/.zshrc'
