@@ -94,8 +94,15 @@ export NVM_DIR="$HOME/.nvm"
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-autosuggestions", defer:2
+# nvm.shの実行が遅いので無理やり遅延ロードにする
+nvm() {
+  unset -f uvm
+  source "${NVM_DIR:-$HOME/.nvm}/nvm.sh"
+  nvm "$@"
+}
+
+zplug "zsh-users/zsh-syntax-highlighting", lazy:true
+zplug "zsh-users/zsh-autosuggestions", lazy:true
 
 # If you add new zsh plugin, plaese run `zplug install && zplug load`
 # Install plugins if there are plugins that have not been installed
