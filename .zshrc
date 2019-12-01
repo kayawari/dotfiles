@@ -45,7 +45,22 @@ alias repo='ghq look $(ghq list | peco)'
 
 # hub alias
 # Open the current pull request page
-alias prpr='hub browse -- "pull/$(git symbolic-ref --short HEAD)"'
+# RECOMMEND: Please install ghq.
+#   ref: https://github.com/motemen/ghq
+function prq() {
+  if ! test -d .git; then
+    echo 'This directory is not git repository.'
+    return
+  fi
+  REPOSITORY_NAME="$(git rev-parse --show-toplevel | awk -F '[/]' '{print $NF}')"
+  USER_NAME="$(git rev-parse --show-toplevel | awk -F '[/]' '{print $(NF-1)}')"
+  BRANCH_NAME="$(git symbolic-ref --short HEAD)"
+  if test "$BRANCH_NAME" = "master"; then
+    hub browse "$USER_NAME/$REPOSITORY_NAME"
+  else
+    hub browse -- "pull/$(git symbolic-ref --short HEAD)"
+  fi
+}
 
 ~/dotfiles/git-completion.bash
 source ~/dotfiles/zsh_opt/git_status.zsh
