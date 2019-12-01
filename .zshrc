@@ -33,7 +33,7 @@ PROMPT="%{${fg[yellow]}%}%~%{${reset_color}%}
 # =====================================
 # original setting
 # =====================================
-alias l='ls -lat'
+alias ls='ls -lat'
 alias gst='git status'
 alias gif='git diff'
 alias gch='git checkout'
