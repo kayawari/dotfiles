@@ -43,6 +43,9 @@ alias branch='git checkout $(git branch | peco)'
 # ghq alias
 alias repo='ghq look $(ghq list | peco)'
 
+# kubectl
+alias k='kubectl'
+
 # hub alias
 # Open the current pull request page
 # RECOMMEND: Please install ghq.
