@@ -1,10 +1,17 @@
-# My dotfiles
-* .zshrc
-* .bashrc
-* .bash_profile
-* .vimrc
-* .viminfo
-* .vim/
+## zsh => fishに移行中
+
+- [fish shell](https://github.com/fish-shell/fish-shell)に移行中  
+  - [Official document](https://fishshell.com/docs/current/index.html)
+
+```sh
+$ brew install fish
+$ sudo echo '/usr/local/bin/fish' >> /etc/shells
+$ chsh -s /usr/local/bin/fish
+```
+
+## Color Theme of iTerm2
+
+[Jackie Brown](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Jackie%20Brown.itermcolors)
 
 ### 他の環境での反映方法
 ``` 
@@ -25,16 +32,6 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 これで、vim を起動すればステータスバーにinstallするかどうか確認confirmが出るはず。
 ```
-
-### zshについて
-mac osの場合にデフォルトでzshが`/usr/bin`に入っているけれど、バージョンが古いのでhomebrewでインストールしてください。
-```
-$ cat /etc/shells
-$ sudo echo '"/usr/local/bin/zsh"' >> /etc/shells
-$ chsh -s /usr/local/bin/zsh
-```
-インストールするシェルのパスを確認します。多分新しくhomebrewで入れたzshのパスは入っていないと思うので、`etc/shells`に新しいzshのパスを追加
-最後に、chsh -sコマンドでログインシェルに反映させる
 
 ### zplugについて
 zplugでロードしているプラグインもあります。
