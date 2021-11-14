@@ -4,8 +4,16 @@ if status is-interactive
   abbr -a gif git diff
   abbr -a gch git checkout
   abbr -a glo git log --oneline
+  abbr -a branch "git checkout (git branch | peco)"
+  abbr -a repo "ghq look (ghq list | peco)"
 end
 
 test -e {$home}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
-alias branch='git checkout (git branch | peco)'
+## =========== keybind ==============
+
+bind \cr 'peco_select_history (commandline -b)'
+
+## =========== alias ==============
+
+alias k='kubectl'
