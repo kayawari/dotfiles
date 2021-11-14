@@ -65,7 +65,6 @@ function prq() {
   fi
 }
 
-~/dotfiles/git-completion.bash
 source ~/dotfiles/zsh_opt/git_status.zsh
 
 # composer 
