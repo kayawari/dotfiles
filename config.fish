@@ -12,7 +12,8 @@ test -e {$home}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shel
 
 ## =========== keybind ==============
 
-bind \cr 'peco_select_history (commandline -b)'
+# fzfのhistory検索を使うのでコメントアウト
+# bind \cr 'peco_select_history (commandline -b)'
 
 ## =========== alias ==============
 
