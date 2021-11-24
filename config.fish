@@ -9,6 +9,7 @@ if status is-interactive
   abbr -a glo git log --oneline
   abbr -a branch "git checkout (git branch | peco | sed 's/^[[:blank:]]*//')"
   abbr -a repo "ghq get --look (ghq list | peco)"
+  abbr -a tree tree -NC
 end
 
 test -e {$home}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
