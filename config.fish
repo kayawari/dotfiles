@@ -1,3 +1,6 @@
+# Settings of asdf
+source /usr/local/opt/asdf/libexec/asdf.fish
+
 if status is-interactive
   abbr -a ls ls -lat
   abbr -a gst git status
