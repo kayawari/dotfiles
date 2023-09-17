@@ -1,3 +1,9 @@
+新しいPCに乗り換えたときに読んでください
+
+## まずはhomebrewのインストールから
+
+https://brew.sh
+
 ## zsh => fishに移行中
 
 - [fish shell](https://github.com/fish-shell/fish-shell)に移行中  
