@@ -9,10 +9,12 @@ https://brew.sh
 - [fish shell](https://github.com/fish-shell/fish-shell)に移行中  
   - [Official document](https://fishshell.com/docs/current/index.html)
 
+デフォルトシェルをfishにしたかったら基本的には以下で対応可能なはず
 ```sh
 $ brew install fish
-$ sudo echo '/usr/local/bin/fish' >> /etc/shells
-$ chsh -s /usr/local/bin/fish
+$ which fish # => 出力されたパスを確認
+$ sudo echo '<whichで出力されたパス>' >> /etc/shells
+$ chsh -s <whichで出力されたパス>
 ```
 
 Install [Fisher](https://github.com/jorgebucaran/fisher).  
