@@ -18,11 +18,6 @@ $ chsh -s /usr/local/bin/fish
 Install [Fisher](https://github.com/jorgebucaran/fisher).  
 Fisherはfish専用のプラグインマネージャー。
 
-
-## Color Theme of iTerm2
-
-[Jackie Brown](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Jackie%20Brown.itermcolors)
-
 ### 他の環境での反映方法
 ``` 
 $ cd ~
